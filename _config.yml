@@ -1,6 +1,6 @@
 baseurl: '/'
 permalink: pretty
-title: 'Jekyll Serif'
+title: 'Asesorías de POO'
 
 logo:
   mobile: "images/logo/logo-mobile.svg"
@@ -37,6 +37,7 @@ sass:
 
 plugins:
   - jekyll-environment-variables
+  - jekyll-linkpreview
 
 exclude:
   - Gemfile
