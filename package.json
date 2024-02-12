@@ -1,0 +1,14 @@
+{
+  "name": "asesorias-de-oop",
+  "version": "1.0.0",
+  "description": "Small project for a school blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}

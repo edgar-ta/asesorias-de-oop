@@ -1,0 +1,30 @@
+<div class="
+grid
+grid-cols-1
+md:grid-cols-2
+xl:grid-cols-3
+gap-2
+">
+  {% for service in site.services limit: include.limit%}
+    {% include service/service_preview.html title=service.title excerpt=service.excerpt %}
+  {% endfor %}
+  {% if include.limit %}
+    <a href="{{ '/services/' | relative_url }}" class="
+    w-full
+    px-4
+    py-2
+    bg-bright-red
+    text-white
+    transition-colors
+    hover:bg-red-700
+    col-span-full
+    text-center
+    row-start-1
+    md:row-auto
+
+    ">
+      ¡Ver todos los artículos!
+    </a>
+  {% endif %}
+
+</div>

@@ -1,14 +1,17 @@
 main:
-  - name: "Services"
+  - name: "Home"
+    url: "/"
+    weight: 1
+  - name: "Artículos"
     url: "/services/"
     weight: 2
-  - name: "Team"
+  - name: "Equipo"
     url: "/team/"
     weight: 3
-  - name: "About"
+  - name: "Acerca de"
     url: "/about/"
     weight: 4
-  - name: "Contact"
+  - name: "Contacto"
     url: "/contact/"
     weight: 5
 
@@ -16,6 +19,6 @@ footer:
   - name: "Home"
     url: "/"
     weight: 1
-  - name: "Contact"
+  - name: "Contacto"
     url: "/contact/"
     weight: 2

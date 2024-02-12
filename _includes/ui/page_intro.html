@@ -1,0 +1,48 @@
+<div class="
+px-horizontal-rule
+grid
+grid-cols-1
+md:grid-cols-2
+min-h-[50vh]
+md:min-h-[75vh]
+gap-16
+">
+    <div class="flex flex-col justify-center items-center">
+        <div class="
+        flex
+        flex-col
+        gap-y-8
+        ">
+            {{ page.content | markdownify }}
+        </div>
+    </div>
+    {% if page.intro_image %}
+        {% unless page.intro_image_hide_on_mobile %}
+        {% endunless %}
+            <div
+            class="
+            md:relative
+            static
+            w-full
+            h-auto
+            md:w-[calc(100%_+_10vw)]
+            md:h-full
+            overflow-hidden
+            "
+            >
+                <img 
+                alt="{{ page.title }}"
+                class="
+                md:absolute
+                w-full
+                h-auto
+                md:w-auto
+                md:h-full
+                md:top-0
+                md:left-0
+                " 
+                src="{{ page.intro_image | relative_url }}" 
+                />
+            </div>
+    {% endif %}
+</div>

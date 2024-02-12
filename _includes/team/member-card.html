@@ -1,0 +1,25 @@
+{% if page.image %}
+<div class="
+sticky
+top-0
+h-fit
+p-4
+">
+  <img src="{{ page.image | relative_url }}" >
+  <div>
+    Social media: 
+    {% for social_medium in page.social_media %}
+      <a 
+      href="{{ social_medium.link }}"
+      class="
+      block
+      "
+      >
+        {{ social_medium.user_name }}
+      </a>
+    {% endfor %}
+  </div>
+</div>
+{% endif %}
+
+
